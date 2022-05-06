@@ -1,0 +1,238 @@
+html {
+  scroll-behavior: smooth;
+}
+*{
+  padding:0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing:border-box;
+}
+body{
+  font-family:montserrat;
+}
+nav{
+  z-index:0;
+
+  position: sticky;
+  top:0;
+  background:#0082e6;
+  height:90px;
+}
+label.logo{
+  color:white;
+  font-size: 25px;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: bold;
+
+}
+nav ul{
+  float:right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color:white;
+  font-size: 17px;
+  text-transform:uppercase;
+}
+a.active,a.hover{
+  background: black;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float:right;
+  line-height: 80px;
+  margin-right: 40px;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float:right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+#check{
+  display: none;
+}
+@media (max-width:925px) {
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+nav ul li a{
+  font-size: 16px;
+}
+}
+@media (max-width:858px) {
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height:100vh;
+    background: red;
+    left:-100%;
+    top:80px;
+    text-align:center;
+    transition: all .5s;
+  }
+  nav ul li{
+    font-size: 20px;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    display: block;
+  }
+
+  a:hover,a.active{
+    background: none;
+    color:black;
+  }
+  #check:checked ~ul{
+    left:0;
+  }
+}
+.headerlist{
+background: url("34.jpg");
+  height:910;
+  background-position: center;
+  background-attachment:inherit;
+  background-repeat: no-repeat;
+}
+.aboutus{
+  margin:0 auto;
+  padding:30px;
+  border: 2px solid;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  background-color: #f59749;
+}
+.aboutus p{
+  font-size: 20px;
+  font-style:italic;
+}
+.eventmatter{
+
+  border-radius: 15px;
+  font-size: 18px;
+  font-style: italic;
+  margin-left: 90px;
+  margin-right:100px;
+  margin-bottom: -100px;
+  border:2px solid;
+
+}
+.eventmatter li{
+  list-style:none;
+}
+
+
+        .row {
+          margin: 10px -16px;
+        }
+
+        /* Add padding BETWEEN each column */
+        .row,
+        .row > .column {
+          padding: 8px;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 33.33%;
+          display: none; /* Hide all elements by default */
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Content */
+        .content {
+          background-color: white;
+          padding: 10px;
+        }
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+          display: block;
+        }
+
+        /* Style the buttons */
+        .btn {
+          border: none;
+          border-radius: 20px;
+          outline: none;
+          padding: 12px 16px;
+          background-color: white;
+          cursor: pointer;
+          font-size: 15px;
+          font-weight:bold;
+        }
+
+        .btn:hover {
+          background-color: yellow;
+        }
+
+        .btn.active {
+          background-color: #666;
+          color: white;
+        }
+        .flex-container {
+          display: flex;
+          flex-direction: row;
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .flex-item-left {
+          background-color: #f1f1f1;
+          padding: 10px;
+          flex: 33.33%;
+        }
+
+        .flex-item-right a:hover{
+          color:yellow;
+        }
+        .flex-item-right {
+          background-color: black;
+          padding: 10px;
+          flex: 33.33%;
+        }
+          .flex-item-right a{
+            color:white;
+          }
+
+
+
+        @media (max-width: 800px) {
+          .flex-container {
+            flex-direction: column;
+
+          }
+        }
+
+  .videoimages{
+    border:2px solid;
+    margin-right:50px;
+    padding:10px;
+  }
+.videos{
+  padding-left: 200px;
+}
